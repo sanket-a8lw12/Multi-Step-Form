@@ -1,0 +1,76 @@
+body{
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding-top: 3em;
+    background-color: black;
+    height: 100vh;
+}
+
+.main-container{
+    display: flex;
+    min-height: 30em;
+    width: 60em;
+    padding: .5em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 1em;
+    flex-basis: 25em;
+    gap: 1em;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/bg-sidebar-desktop.svg");
+}
+
+.nav-info{
+    display: flex;
+    gap: 1em;
+    /* justify-content: center; */
+    
+}
+
+.number{
+    padding-top: .3em;
+    height: 1.5em;
+    width: 1.5em;
+    font-weight: 20em;
+    border: 1px solid white;
+    border-radius: 9em;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 7em;
+    height: 3em;
+    align-self: flex-end;
+    border-radius: 1em;
+}
+
+.your-info{
+     display: flex;
+     flex-direction: column;
+     color: grey;
+}
+
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.black-color{
+    color: black;
+}
