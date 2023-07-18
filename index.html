@@ -9,7 +9,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
   <title>Multi-step form</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -91,175 +93,193 @@
       <label for="pNumber" class="black-color">Phone Number</label><br>
       <input type="tel" id="pNumber" name="pNumber" placeholder="e.g. +1 234 567 890">
       <br><br>
-      <button>Next Step   </button>
+      <button>Next Step </button>
     </div>
 
     <div class="select-plan select-plan-border">
 
-        <div class="select-plan-text select-plan-border">
-          <h1>Select Your Plan</h1>
-          You have the option of monthly and yearly billing.
-        </div>
+      <div class="select-plan-text select-plan-border">
+        <h1>Select Your Plan</h1>
+        You have the option of monthly and yearly billing.
+      </div>
 
-        <div class="plan select-plan-border">
-            <div class="arcade select-plan-border select-plan-box">
-              <img src="./assets/images/icon-arcade.svg">
-              <div>
-                <b>Arcade</b>
-              <p>$9/mo</p>
-              </div>
-            </div>
-            <div class="advance select-plan-border select-plan-box">
-                <img src="./assets/images/icon-advanced.svg">
-                <div>
-                  <b>Advance</b>
-                <p>$12/mo</p>
-                </div>
-            </div>
-            <div class="pro select-plan-border select-plan-box">
-                  <img src="./assets/images/icon-pro.svg">
-                  <div>
-                    <b>Pro</b>
-                <p>$15/mo</p>
-                  </div>
-            </div>
-        </div>
-
-        <div class="monthly-yearly select-plan-border ">
-            <div>
-              <b>Monthly</b>
-            </div>
-            <div>
-              <input type="checkbox" id="toggle" class="toggle">
-            </div>
-            <div>
-              <b>Yearly</b>
-            </div>
-        </div>
-
-        <div class="button select-plan-border ">
+      <div class="plan select-plan-border">
+        <div class="arcade select-plan-border select-plan-box">
+          <img src="./assets/images/icon-arcade.svg">
           <div>
-            <button>Go Back</button>
-          </div>
-          <div>
-            <button>Next Step</button>
+            <b>Arcade</b>
+            <p>$9/mo</p>
           </div>
         </div>
+        <div class="advance select-plan-border select-plan-box">
+          <img src="./assets/images/icon-advanced.svg">
+          <div>
+            <b>Advance</b>
+            <p>$12/mo</p>
+          </div>
+        </div>
+        <div class="pro select-plan-border select-plan-box">
+          <img src="./assets/images/icon-pro.svg">
+          <div>
+            <b>Pro</b>
+            <p>$15/mo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="monthly-yearly select-plan-border ">
+        <div>
+          <b>Monthly</b>
+        </div>
+        <div>
+          <input type="checkbox" id="toggle" class="toggle">
+        </div>
+        <div>
+          <b>Yearly</b>
+        </div>
+      </div>
+
+      <div class="button select-plan-border ">
+        <div>
+          <button>Go Back</button>
+        </div>
+        <div>
+          <button>Next Step</button>
+        </div>
+      </div>
 
     </div>
 
     <div class="add-ons">
+      <div>
+        <h1>Pick add-ons</h1>
+        <p>Add-ons help enhance your gaming experience.</p>
+      </div>
+
+      <div class="pick-add-ons">
+
+        <div class="add-on-content">
+          <div class="add-on-align-center">
+            <input type="checkbox">
+          </div>
+          <div class="add-on-text">
+            <b>Online Service</b>
+            Access to multiplayer games
+          </div>
+          <div class="add-on-align-center">
+            +$1/mo
+          </div>
+        </div>
+
+        <!-- <div class="add-on-content"> -->
+        <div class="add-on-content">
+
+          <div class="add-on-align-center">
+            <input type="checkbox">
+          </div>
+          <div class="add-on-text">
+            <b>Online Service</b>
+            Access to multiplayer games
+          </div>
+          <div class="add-on-align-center">
+            +$1/mo
+          </div>
+
+        </div>
+        <!-- </div> -->
+
+        <!-- <div class="add-on-content"> -->
+        <div class="add-on-content">
+          <div class="add-on-align-center">
+            <input type="checkbox">
+          </div>
+          <div class="add-on-text">
+            <b>Online Service</b>
+            Access to multiplayer games
+          </div>
+          <div class="add-on-align-center">
+            +$1/mo
+          </div>
+        </div>
+        <!-- </div> -->
+
+      </div>
+
+      <div class="add-on-button">
         <div>
-          <h1>Pick add-ons</h1>
-          <p>Add-ons help enhance your gaming experience.</p>
+          <button>Go Back</button>
         </div>
-
-        <div class="pick-add-ons">
-
-          <div class="add-on-content">
-            <div class="add-on-align-center">
-               <input type="checkbox">
-              </div>
-            <div class="add-on-text">
-              <b>Online Service</b>
-              Access to multiplayer games
-            </div>
-            <div class="add-on-align-center">
-              +$1/mo
-            </div>
-          </div>
-
-          <!-- <div class="add-on-content"> -->
-            <div class="add-on-content">
-
-              <div class="add-on-align-center"> 
-                <input type="checkbox">
-              </div>
-              <div class="add-on-text">
-                <b>Online Service</b>
-                Access to multiplayer games
-              </div>
-              <div class="add-on-align-center">
-                +$1/mo
-              </div>
-
-            </div>
-          <!-- </div> -->
-
-          <!-- <div class="add-on-content"> -->
-            <div class="add-on-content">
-              <div class="add-on-align-center">
-                 <input type="checkbox">
-                </div>
-              <div class="add-on-text">
-                <b>Online Service</b>
-                Access to multiplayer games
-              </div>
-              <div class="add-on-align-center">
-                +$1/mo
-              </div>
-            </div>
-          <!-- </div> -->
-          
+        <div>
+          <button>Next Step</button>
         </div>
+      </div>
+    </div>
 
-        <div class="add-on-button">
-          <div>
-            <button>Go Back</button>
+    <div class="Finishing">
+      <div class="Finishing-text">
+        <h1>Finishing up</h1>
+        <p>Double-check everything looks OK before confirming.</p>
+      </div>
+
+      <div class="items">
+
+        <div class="flexOnly flexGrow arcade">
+          <div class="flexDisplay flexGrow">
+            <b>Arcade (Monthly)</b>
+            <a href="">Change</a>
           </div>
-          <div>
-            <button>Next Step</button>
+          <div class="item-price">
+            <b>$9/mo</b>
           </div>
         </div>
+        <!-- <hr> -->
+        <div class="flexOnly flexGrow arcade">
+          <div class="service-storage">
+            <p>Online service</p>
+            <p>Larger storage</p>
+            
+          </div>
+          <div class="service-storage service-storage-price">
+            <p>+$1/mo</p>
+            <p>+$2/mo</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="total">
+        <p>Total (per month)</p>
+        <b>+$12/mo</b>
+      </div>
+
+      <div class="finishing-up-button">
+        <div>
+          <button id="goBack">Go Back</button>
+        </div>
+        <div>
+          <button>Confirm</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="thankYou">
+      <div class="thankYou-img">
+        <img src="./assets/images/icon-thank-you.svg">
+      </div>
+      <div class="thankYou-text">
+        <b>Thank you!</b>
+        <p>Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free to email us
+          at support@loremgaming.com.
+        </p>
+      </div>
     </div>
 
   </div>
 
-  <!-- Sidebar end -->
+  
 
-  <!-- Step 1 start -->
-
-  Personal info
-  Name e.g. Stephen King Email Address e.g. stephenking@lorem.com Phone Number
-  e.g. +1 234 567 890 Next Step
-
-
-
-
-  <!-- Step 1 end -->
-
-  <!-- Step 2 start -->
-
-  Select your plan You have the option of monthly or yearly billing. Arcade
-  $9/mo Advanced $12/mo Pro $15/mo Monthly Yearly Go Back Next Step
-
-  <!-- Step 2 end -->
-
-  <!-- Step 3 start -->
-
-  Pick add-ons Add-ons help enhance your gaming experience. Online service
-  Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
-  +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back Next
-  Step
-
-  <!-- Step 3 end -->
-
-  <!-- Step 4 start -->
-
-  Finishing up Double-check everything looks OK before confirming.
-
-  <!-- Dynamically add subscription and add-on selections here -->
-
-  Total (per month/year) Go Back Confirm
-
-  <!-- Step 4 end -->
-
-  <!-- Step 5 start -->
-
-  Thank you! Thanks for confirming your subscription! We hope you have fun
-  using our platform. If you ever need support, please feel free to email us
-  at support@loremgaming.com.
-
+   
   <!-- Step 5 end -->
 </body>
 
