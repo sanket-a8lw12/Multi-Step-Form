@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
   <title>Multi-step form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -93,7 +94,59 @@
       <button>Next Step   </button>
     </div>
 
-    
+    <div class="select-plan select-plan-border">
+
+        <div class="select-plan-text select-plan-border">
+          <h1>Select Your Plan</h1>
+          You have the option of monthly and yearly billing.
+        </div>
+
+        <div class="plan select-plan-border">
+            <div class="arcade select-plan-border select-plan-box">
+              <img src="./assets/images/icon-arcade.svg">
+              <div>
+                <b>Arcade</b>
+              <p>$9/mo</p>
+              </div>
+            </div>
+            <div class="advance select-plan-border select-plan-box">
+                <img src="./assets/images/icon-advanced.svg">
+                <div>
+                  <b>Advance</b>
+                <p>$12/mo</p>
+                </div>
+            </div>
+            <div class="pro select-plan-border select-plan-box">
+                  <img src="./assets/images/icon-pro.svg">
+                  <div>
+                    <b>Pro</b>
+                <p>$15/mo</p>
+                  </div>
+            </div>
+        </div>
+
+        <div class="monthly-yearly select-plan-border ">
+            <div>
+              <b>Monthly</b>
+            </div>
+            <div>
+              <input type="checkbox" id="toggle" class="toggle">
+            </div>
+            <div>
+              <b>Yearly</b>
+            </div>
+        </div>
+
+        <div class="button select-plan-border ">
+          <div>
+            <button>Go Back</button>
+          </div>
+          <div>
+            <button>Next Step</button>
+          </div>
+        </div>
+
+    </div>
 
   </div>
 
