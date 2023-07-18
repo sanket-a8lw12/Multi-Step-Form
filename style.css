@@ -93,6 +93,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    display: none;
 }
 
 .select-plan-box{
@@ -130,7 +131,6 @@ p{
     padding: 1em;
     background-color: lightcyan;
     gap: 1em;
-    /* height: 2em; */
 }
 
 
@@ -159,4 +159,42 @@ p{
     transform: translateX(1.5em);
   }
 
+
+  .add-on-content{
+    display: flex;
+    flex-grow: 1;
+    height: 3em;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5em;
+  }
+
+  .add-ons{
+    display: flex;
+    flex-direction: column;
+     gap: 2em;
+  }
   
+  .pick-add-ons{    
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .add-on-text{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-on-align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-on-button{
+    display: flex;
+    justify-content: space-between;
+  }
