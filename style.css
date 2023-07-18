@@ -29,6 +29,7 @@ body{
     flex-basis: 25em;
     gap: 1em;
     background-repeat: no-repeat;
+    /* background-size: cover; */
     background-image: url("./assets/images/bg-sidebar-desktop.svg");
 }
 
@@ -57,10 +58,19 @@ button{
     border-radius: 1em;
 }
 
+.button{
+    height: 7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* border: 1px solid black; */
+}
+
 .your-info{
      display: flex;
      flex-direction: column;
      color: grey;
+     display: none;
 }
 
 
@@ -74,3 +84,79 @@ button{
 .black-color{
     color: black;
 }
+
+.select-plan-border{
+    /* border: 2px solid black; */
+}
+
+.select-plan{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.select-plan-box{
+    height: 7em;
+    width: 5em;
+    border: 1px solid black;
+    border-radius: 1em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    padding: 1em;
+}
+
+.select-plan-box img{
+    height: 2em;
+    width: 2em;
+}
+
+.plan{
+    display: flex;
+    gap: 1em;
+   
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.monthly-yearly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: lightcyan;
+    gap: 1em;
+    /* height: 2em; */
+}
+
+
+.toggle {
+    appearance: none;
+    width: 3em;
+    height: 1.5em;
+    background-color: hsl(228, 45%, 44%);
+    border-radius: 13px;
+    position: relative;
+  }
+
+.toggle::before {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    background-color: white;
+    transition: transform 0.2s;
+  }
+
+  .toggle:checked::before {
+    transform: translateX(1.5em);
+  }
+
+  
