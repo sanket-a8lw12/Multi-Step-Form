@@ -41,14 +41,13 @@ body{
 }
 
 .number{
-    padding-top: .3em;
+    padding-top: .2em;
     height: 1.5em;
     width: 1.5em;
     font-weight: 20em;
     border: 1px solid white;
-    border-radius: 9em;
-    display: flex;
-    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
 }
 
 button{
@@ -70,7 +69,7 @@ button{
      display: flex;
      flex-direction: column;
      color: grey;
-     display: none;
+     /* display: none; */
 }
 
 
@@ -94,6 +93,7 @@ button{
     flex-direction: column;
     gap: 1em;
     display: none;
+    /* opacity: 0.0; */
 }
 
 .select-plan-box{
@@ -299,7 +299,7 @@ p{
     background: transparent;
 }
 
-.thankYou{
+.thankYou{    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,6 +307,7 @@ p{
     /* border: 2px solid red; */
     flex-basis: 20em;
     gap: 1em;
+    display: none;  
 }
 
 .thankYou-text{
@@ -319,3 +320,11 @@ p{
 }
 
 
+.adjustWidth{
+    flex-basis: 25em;
+}
+
+
+.borderColor{
+    border: 3px solid red;
+}
