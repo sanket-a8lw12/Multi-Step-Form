@@ -80,7 +80,7 @@
 
     </div>
 
-    <div class="your-info">
+    <div class="your-info adjustWidth">
       <h1 class="black-color">Personal Info</h1>
       Please provide your name, email address, and phone number.
       <br><br>
@@ -93,10 +93,10 @@
       <label for="pNumber" class="black-color">Phone Number</label><br>
       <input type="tel" id="pNumber" name="pNumber" placeholder="e.g. +1 234 567 890">
       <br><br>
-      <button>Next Step </button>
+      <button id="your-info-btn">Next Step</button>
     </div>
 
-    <div class="select-plan select-plan-border">
+    <div class="select-plan select-plan-border adjustWidth">
 
       <div class="select-plan-text select-plan-border">
         <h1>Select Your Plan</h1>
@@ -104,25 +104,28 @@
       </div>
 
       <div class="plan select-plan-border">
-        <div class="arcade select-plan-border select-plan-box">
+        <div id="arcadeId" class="arcade select-plan-border select-plan-box">
           <img src="./assets/images/icon-arcade.svg">
-          <div>
+          <div class="plan-price-div">
             <b>Arcade</b>
-            <p>$9/mo</p>
+            <p id="ArcadePrice">$9/mo</p>
+            <p class="added-plan"></p>
           </div>
         </div>
-        <div class="advance select-plan-border select-plan-box">
+        <div id="advanceId" class="advance select-plan-border select-plan-box">
           <img src="./assets/images/icon-advanced.svg">
-          <div>
+          <div class="plan-price-div">
             <b>Advance</b>
-            <p>$12/mo</p>
+            <p id="AdvancePrice">$12/mo</p>
+            <p class="added-plan"></p>
           </div>
         </div>
-        <div class="pro select-plan-border select-plan-box">
+        <div id="proId" class="pro select-plan-border select-plan-box">
           <img src="./assets/images/icon-pro.svg">
-          <div>
+          <div class="plan-price-div">
             <b>Pro</b>
-            <p>$15/mo</p>
+            <p id="proPrice">$15/mo</p>
+            <p class="added-plan"></p>
           </div>
         </div>
       </div>
@@ -141,16 +144,16 @@
 
       <div class="button select-plan-border ">
         <div>
-          <button>Go Back</button>
+          <button id="plan-goBack-btn">Go Back</button>
         </div>
         <div>
-          <button>Next Step</button>
+          <button id="plan-btn-next">Next Step</button>
         </div>
       </div>
 
     </div>
 
-    <div class="add-ons">
+    <div class="add-ons adjustWidth">
       <div>
         <h1>Pick add-ons</h1>
         <p>Add-ons help enhance your gaming experience.</p>
@@ -160,13 +163,13 @@
 
         <div class="add-on-content">
           <div class="add-on-align-center">
-            <input type="checkbox">
+            <input type="checkbox" name="Online Service" id="onlineService">
           </div>
           <div class="add-on-text">
             <b>Online Service</b>
             Access to multiplayer games
           </div>
-          <div class="add-on-align-center">
+          <div id="addOn-One" class="add-on-align-center yearlyPrice">
             +$1/mo
           </div>
         </div>
@@ -175,14 +178,14 @@
         <div class="add-on-content">
 
           <div class="add-on-align-center">
-            <input type="checkbox">
+            <input type="checkbox" name="Larger Storage" id="largerStorage">
           </div>
           <div class="add-on-text">
-            <b>Online Service</b>
-            Access to multiplayer games
+            <b>Larger Storage</b>
+            Extra 1TB of cloud save
           </div>
-          <div class="add-on-align-center">
-            +$1/mo
+          <div id="addOn-Two" class="add-on-align-center yearlyPrice">
+            +$2/mo
           </div>
 
         </div>
@@ -191,14 +194,14 @@
         <!-- <div class="add-on-content"> -->
         <div class="add-on-content">
           <div class="add-on-align-center">
-            <input type="checkbox">
+            <input type="checkbox" name="Customizable Profile" id="customizableProfile">
           </div>
           <div class="add-on-text">
-            <b>Online Service</b>
-            Access to multiplayer games
+            <b>Customizable Profile</b>
+            Custom them on your profile
           </div>
-          <div class="add-on-align-center">
-            +$1/mo
+          <div id="addOn-Three" class="add-on-align-center yearlyPrice">
+            +$2/mo
           </div>
         </div>
         <!-- </div> -->
@@ -207,15 +210,15 @@
 
       <div class="add-on-button">
         <div>
-          <button>Go Back</button>
+          <button id="addOn-btn-back">Go Back</button>
         </div>
         <div>
-          <button>Next Step</button>
+          <button id="addOn-btn-next">Next Step</button>
         </div>
       </div>
     </div>
 
-    <div class="Finishing">
+    <div class="Finishing adjustWidth">
       <div class="Finishing-text">
         <h1>Finishing up</h1>
         <p>Double-check everything looks OK before confirming.</p>
@@ -225,24 +228,37 @@
 
         <div class="flexOnly flexGrow arcade">
           <div class="flexDisplay flexGrow">
-            <b>Arcade (Monthly)</b>
+            <b id="finishing-Plan-Info">Arcade (Monthly)</b>
             <a href="">Change</a>
           </div>
-          <div class="item-price">
-            <b>$9/mo</b>
+          <div>
+            <b id="item-price">$9/mo</b>
           </div>
         </div>
         <!-- <hr> -->
         <div class="flexOnly flexGrow arcade">
           <div class="service-storage">
-            <p>Online service</p>
-            <p>Larger storage</p>
+
+            <div id="addOn1">
+             <p></p>
+             <p></p>
+            </div>
             
+
+            <div id="addOn2">
+              <p></p>
+              <p></p>
+            </div>
+            
+
+            <div id="addOn3">
+              <p></p>
+              <p></p>
+            </div>
+            
+
           </div>
-          <div class="service-storage service-storage-price">
-            <p>+$1/mo</p>
-            <p>+$2/mo</p>
-          </div>
+
         </div>
 
       </div>
@@ -254,15 +270,15 @@
 
       <div class="finishing-up-button">
         <div>
-          <button id="goBack">Go Back</button>
+          <button id="finish-btn-back">Go Back</button>
         </div>
         <div>
-          <button>Confirm</button>
+          <button id="finish-btn">Confirm</button>
         </div>
       </div>
     </div>
 
-    <div class="thankYou">
+    <div class="thankYou adjustWidth">
       <div class="thankYou-img">
         <img src="./assets/images/icon-thank-you.svg">
       </div>
@@ -277,10 +293,9 @@
 
   </div>
 
-  
 
-   
-  <!-- Step 5 end -->
+
+  <script src="./app.js"></script>
 </body>
 
 </html>
