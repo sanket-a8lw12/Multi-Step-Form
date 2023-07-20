@@ -84,16 +84,40 @@
       <h1 class="black-color">Personal Info</h1>
       Please provide your name, email address, and phone number.
       <br><br>
-      <label for="name" class="black-color">Name</label><br>
-      <input type="text" id="name" name="name" placeholder="Stephen King">
+      <form action="" name="myForm">
+        <!-- <form action=""> -->
+        <!-- <label for="name" class="black-color">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Stephen King"> -->
+      <div class="signup-column form-design" id="name" >
+        <label for="name"><b>First Name</b></label>
+
+        <input type="text" name="name" placeholder="Stephen King" required>
+        <span class="formError"></span>
+    </div>
       <br><br>
-      <label for="email" class="black-color">Email</label><br>
-      <input type="email" id="email" name="email" required placeholder="stephenking@lorem.com">
+      <!-- <label for="email" class="black-color">Email</label><br>
+      <input type="email" id="email" name="email" required placeholder="stephenking@lorem.com"> -->
+
+      <div class="signup-column form-design" id="email">
+        <label for="email"><b>Email</b></label>
+
+        <input type="text" name="email" id="emailID" placeholder="stephenking@lorem.com" required>
+        <span class="formError"></span>
+    </div>
       <br><br>
-      <label for="pNumber" class="black-color">Phone Number</label><br>
-      <input type="tel" id="pNumber" name="pNumber" placeholder="e.g. +1 234 567 890">
+      <!-- <label for="pNumber" class="black-color">Phone Number</label><br>
+      <input type="tel" id="pNumber" name="pNumber" placeholder="e.g. +1 234 567 890"> -->
+
+      <div class="signup-column form-design" id="phone">
+        <label for="phone"><b>Phone Number</b></label>
+
+        <input type="tel" name="phone" id="phoneId" placeholder="e.g. 234 567 890" required>
+        <span class="formError"></span>
+    </div>
+      </form>
       <br><br>
       <button id="your-info-btn">Next Step</button>
+      <!-- </form> -->
     </div>
 
     <div class="select-plan select-plan-border adjustWidth">
@@ -239,19 +263,23 @@
         <div class="flexOnly flexGrow arcade">
           <div class="service-storage">
 
-            <div id="addOn1">
-             <p></p>
-             <p></p>
+            <div id="addOn1" class="addOnFlex">
+             <div class="one">
+              <p></p>
+             </div>
+             <div class="one">
+              <p></p>
+             </div>
             </div>
             
 
-            <div id="addOn2">
+            <div id="addOn2" class="addOnFlex">
               <p></p>
               <p></p>
             </div>
             
 
-            <div id="addOn3">
+            <div id="addOn3" class="addOnFlex">
               <p></p>
               <p></p>
             </div>
@@ -264,8 +292,8 @@
       </div>
 
       <div class="total">
-        <p>Total (per month)</p>
-        <b>+$12/mo</b>
+        <p>Total</p>
+        <b id="totalPrice">0</b>
       </div>
 
       <div class="finishing-up-button">
