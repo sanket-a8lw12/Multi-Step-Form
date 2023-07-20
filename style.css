@@ -7,8 +7,9 @@ body{
     align-items: center;
     gap: 5em;
     padding-top: 3em;
-    background-color: black;
+    background-color: hsl(229, 24%, 87%);
     height: 100vh;
+    flex-wrap: wrap;
 }
 
 .main-container{
@@ -18,10 +19,13 @@ body{
     padding: .5em;
     background-color: white;
     border-radius: 1em;
+    flex-wrap: wrap;
+
 }
 
 .nav-bar{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     padding: 1em;
@@ -37,6 +41,7 @@ body{
     display: flex;
     gap: 1em;
     /* justify-content: center; */
+    flex-wrap: wrap;
     
 }
 
@@ -69,7 +74,18 @@ button{
      display: flex;
      flex-direction: column;
      color: grey;
+     flex-wrap: wrap;
      /* display: none; */
+}
+
+.signup-column{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.formError{
+    color: red;
 }
 
 
@@ -93,6 +109,7 @@ button{
     flex-direction: column;
     gap: 1em;
     display: none;
+    flex-wrap: wrap;
     /* opacity: 0.0; */
 }
 
@@ -103,9 +120,10 @@ button{
     border-radius: 1em;
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 2.5em;
     padding: 1em;
+    flex-wrap: wrap;
 }
 
 .select-plan-box img{
@@ -123,6 +141,8 @@ p{
     padding: 0;
     margin: 0;
 }
+
+
 
 .monthly-yearly{
     display: flex;
@@ -327,4 +347,108 @@ p{
 
 .borderColor{
     border: 3px solid red;
+}
+
+
+.addOnFlex{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    gap: 15em;
+}
+
+.one{
+
+    display: flex;
+    flex-grow: 1;
+    /* justify-content: flex-end; */
+    /* border: 2px solid red; */
+}
+
+
+
+
+
+
+@media (max-width: 480px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: hsl(229, 24%, 87%);
+    }
+
+    .main-container{
+        width: 100%;
+        padding: 0;
+        background-color: inherit;
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-image: url("./assets/images/bg-sidebar-mobile.svg");
+        background-repeat: no-repeat;
+        background-position-y: -20px;
+        background-size: cover;
+        padding-top: 8%;
+        margin: 0;
+        width: 100%;
+        height: 170px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+    }
+
+    .number{
+        padding-top: .2em;
+        height: 1.5em;
+        width: 1.5em;
+        font-weight: 20em;
+        border: 1px solid white;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .text{
+        display: none;
+    }
+
+    .section{
+        z-index: 2;
+        padding: 5% 8% 10% 8%;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .select-plan, .adjustWidth{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .your-info{
+        margin: 1em;
+    }
+
+    .plan{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* width: 100%;2 */
+    }
+
+    .select-plan-box{
+        width: 100%;
+        /* gap: 0em; */
+        display: flex;
+
+    }
+
 }
